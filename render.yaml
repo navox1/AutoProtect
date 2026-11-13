@@ -1,0 +1,7 @@
+services:
+  - type: web
+    name: mini-antivirus-signatures
+    runtime: static
+    buildCommand: mkdir -p public && cp signatures.txt public/
+    staticPublishPath: ./public
+    autoDeploy: true
